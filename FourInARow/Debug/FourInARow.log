@@ -1,25 +1,9 @@
-﻿Build started 2015-11-09 3:12:25 PM.
-     1>Project "C:\Users\Simon\Desktop\FourInARow\FourInARow\FourInARow.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Program\Visual Studio 12\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Controller.cpp
-         Controller.cpp
-       Link:
-         D:\Program\Visual Studio 12\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.lib" /MACHINE:X86 Debug\AI.obj
-         Debug\Board.obj
-         Debug\browser.obj
-         Debug\Client.obj
-         Debug\Controller.obj
-         Debug\GamePanel.obj
-         Debug\Human.obj
-         Debug\Main.obj
-         Debug\MainMenu.obj
-         Debug\Remote.obj
-         Debug\Server.obj
-         Debug\Settings.obj
-         Debug\SettingsPanel.obj
-         FourInARow.vcxproj -> C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.exe
-     1>Done Building Project "C:\Users\Simon\Desktop\FourInARow\FourInARow\FourInARow.vcxproj" (Build target(s)).
+﻿Build started 2015-11-09 15:42:51.
+     1>Project "E:\git\FourInARow\FourInARow\FourInARow.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         FourInARow.vcxproj -> E:\git\FourInARow\Debug\FourInARow.exe
+     1>Done Building Project "E:\git\FourInARow\FourInARow\FourInARow.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.21
+Time Elapsed 00:00:00.04

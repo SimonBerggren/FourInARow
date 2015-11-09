@@ -14,8 +14,9 @@ namespace Entity
 		Remote& operator = (const Remote&) = delete;
 
 		Network::Client* client;
+
 	public:
-		Remote();
+		Remote(std::string IPAdress, int port);
 		// Makes a move when the mouse has been clicked, based on its position, and sends it to the Client which in turn sends the information to the server
 		void MakeMove() override;
 	};

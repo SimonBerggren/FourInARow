@@ -2,9 +2,10 @@
 
 namespace Entity
 {
-	AI::AI()
+	AI::AI(General::Board* board)
 		: Player()
 	{
+		this->board = board;
 	}
 
 	void AI::MakeMove()

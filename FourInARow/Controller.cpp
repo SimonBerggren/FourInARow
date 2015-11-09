@@ -1,12 +1,15 @@
 #include "Controller.h"
 #include <iostream>
+#include "Human.h"
+#include "AI.h"
+#include "Remote.h"
 
 namespace General
 {
 	Controller::Controller()
 	{
 		menuPanel = new GUI::MainMenu();
-		gamePanel = new GUI::GamePanel();
+		boardPanel = new GUI::BoardPanel();
 		settings = new Settings();
 		settingsPanel = new GUI::SettingsPanel(settings);
 
@@ -52,11 +55,34 @@ namespace General
 	{
 		
 		settingsPanel->ShowSettings();
-		std::cout << "Settings is done. PlayerAName: " << settings->PlayerAName << "\n PlayerBName: " << settings->PlayerBName << std::endl;
-		std::cout << "Columns: " << settings->column << "\nRows: " << settings->rows << std::endl;
-		// create settingswindow
-		// if settings->Complete
-		// read settings
+		board = new Board(settings->column, settings->rows);
+		switch (settings->gametype)
+		{
+		case HUMAN_VS_HUMAN:
+			playerA = new Entity::Human(boardPanel);
+			playerB = new Entity::Human(boardPanel);
+			break;
+		case HUMAN_VS_AI:
+			playerA = new Entity::Human(boardPanel);
+			playerB = new Entity::AI(board);
+			break;
+		case AI_VS_AI:
+			playerA = new Entity::AI(board);
+			playerB = new Entity::AI(board);
+			break;
+		case AI_VS_REMOTE:
+			playerA = new Entity::AI(board);
+			playerB = new Entity::Remote(settings->IPAdress, settings->port);
+			break;
+		case HUMAN_VS_REMOTE:
+			playerA = new Entity::Human(boardPanel);
+			playerB = new Entity::Remote(settings->IPAdress, settings->port);
+			break;
+		case REMOTE_VS_REMOTE:
+			playerA = new Entity::Remote(settings->IPAdress, settings->port);
+			playerB = new Entity::Remote(settings->IPAdress, settings->port);
+			break;
+		}
 		// create board
 		// create players
 	}

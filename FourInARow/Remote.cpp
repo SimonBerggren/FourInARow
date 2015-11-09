@@ -2,7 +2,7 @@
 
 namespace Entity
 {
-	Remote::Remote()
+	Remote::Remote(std::string IPAdress, int port)
 		: Player()
 	{
 	}

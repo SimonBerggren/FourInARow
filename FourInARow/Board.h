@@ -8,9 +8,10 @@ namespace General
 	class Board
 	{
 	public:
-		Board();
-		int gridSizeX;
-		int gridSizeY;
+		Board() = delete;
+		Board(int col, int row);
+		int col;
+		int row;
 		// Validates if a checker can be placed in chosen column.
 		bool ValidateMove(int col);
 		// Places a checker in chosen column.

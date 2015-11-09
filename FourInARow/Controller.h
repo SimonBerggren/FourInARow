@@ -1,7 +1,7 @@
 #pragma once
 #include "Player.h"
 #include "MainMenu.h"
-#include "GamePanel.h"
+#include "BoardPanel.h"
 #include "SettingsPanel.h"
 #include "Settings.h"
 #include "Board.h"
@@ -15,7 +15,7 @@ namespace General
 	{
 	private:
 		GUI::MainMenu* menuPanel;
-		GUI::GamePanel* gamePanel;
+		GUI::BoardPanel* boardPanel;
 		GUI::SettingsPanel* settingsPanel;
 
 		Settings* settings;

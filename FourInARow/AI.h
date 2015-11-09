@@ -15,7 +15,7 @@ namespace Entity
 
 		General::Board* board;
 	public:
-		AI();
+		AI(General::Board* board);
 		// Calculates a move based on how the board looks like
 		void MakeMove() override;
 	};
