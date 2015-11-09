@@ -1,4 +1,8 @@
 #pragma once
+#include <iostream>
+#include "Human.h"
+#include "AI.h"
+#include "Remote.h"
 #include "Player.h"
 #include "MainMenu.h"
 #include "BoardPanel.h"
@@ -8,7 +12,7 @@
 
 namespace General
 {
-	/*
+	/*v
 	Controller has control of everything that exist. Thus it has control of the flow of the application.
 	*/
 	class Controller
@@ -24,7 +28,7 @@ namespace General
 		void StartGame();
 		void ShowAbout();
 		void RestartGame();
-		void ExitGame();
+		void QuitGame();
 	public:
 		Controller();
 		Entity::Player* playerA;

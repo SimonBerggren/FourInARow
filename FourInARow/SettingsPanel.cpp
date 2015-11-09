@@ -1,6 +1,4 @@
 #include "SettingsPanel.h"
-#include <iostream>
-#include <string>
 
 namespace GUI
 {

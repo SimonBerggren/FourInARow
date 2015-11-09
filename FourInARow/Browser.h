@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 
 namespace GUI
 {
@@ -13,5 +14,6 @@ namespace GUI
 		std::string path;
 		// Changes the directory path of the html file that wants to be viewed.
 		void SetPage(std::string path);
+		void PrintAbout();
 	};
 }

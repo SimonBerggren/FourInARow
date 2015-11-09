@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <string>
 #include "Browser.h"
 
 #define START_GAME	1
@@ -13,11 +15,12 @@ namespace GUI
 	class MainMenu
 	{
 	private:
-		Browser* browser;
-
 		int choice;
+
 	public:
 		MainMenu();
+
+		Browser* browser;
 
 		int WaitForCommand();
 

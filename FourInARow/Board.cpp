@@ -6,6 +6,33 @@ namespace General
 	{
 		this->col = col;
 		this->row = row;
+
+		board = new char*[row];
+		for (int i = 0; i < row; ++i)
+			board[i] = new char[col];
+
+		for (int y = 0; y < row; ++y)
+		{
+			for (int x = 0; x < col; ++x)
+			{
+				board[y][x] = 'X';
+			}
+		}
+	}
+
+	void Board::ShowBoard()
+	{
+		system("cls");
+
+		for (int y = 0; y < row; ++y)
+		{
+			for (int x = 0; x < col; ++x)
+			{
+				std::cout << board[y][x] << " ";
+			}
+
+			std::cout << std::endl;
+		}
 	}
 
 	bool Board::ValidateMove(int col)
@@ -15,6 +42,6 @@ namespace General
 
 	void Board::PlaceChecker(int col)
 	{
-
+		
 	}
 }

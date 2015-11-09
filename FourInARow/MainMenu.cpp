@@ -1,10 +1,10 @@
 #include "MainMenu.h"
-#include <iostream>
+
 namespace GUI
 {
 	MainMenu::MainMenu()
 	{
-
+		browser = new Browser();
 	}
 
 	int MainMenu::WaitForCommand()
@@ -13,7 +13,7 @@ namespace GUI
 
 		std::cout << "1: Play Game" << std::endl;
 		std::cout << "2: About" << std::endl;
-		std::cout << "3: Exit Game" << std::endl;
+		std::cout << "3: Quit Game" << std::endl;
 
 		int choice = 0;
 

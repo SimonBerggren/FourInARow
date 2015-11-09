@@ -1,8 +1,4 @@
 #include "Controller.h"
-#include <iostream>
-#include "Human.h"
-#include "AI.h"
-#include "Remote.h"
 
 namespace General
 {
@@ -40,10 +36,10 @@ namespace General
 				StartGame();
 				break;
 			case SHOW_ABOUT:
-
+				menuPanel->browser->PrintAbout();
 				break;
 			case QUIT_GAME:
-
+				running = false;
 				break;
 			default:
 				break;
@@ -53,7 +49,6 @@ namespace General
 
 	void Controller::StartGame()
 	{
-		
 		settingsPanel->ShowSettings();
 		board = new Board(settings->column, settings->rows);
 		switch (settings->gametype)
@@ -83,8 +78,7 @@ namespace General
 			playerB = new Entity::Remote(settings->IPAdress, settings->port);
 			break;
 		}
-		// create board
-		// create players
+		board->ShowBoard();
 	}
 
 	void Controller::ShowAbout()
@@ -97,7 +91,7 @@ namespace General
 
 	}
 
-	void Controller::ExitGame()
+	void Controller::QuitGame()
 	{
 
 	}

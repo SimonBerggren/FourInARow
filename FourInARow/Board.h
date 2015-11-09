@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 namespace General
 {
@@ -12,6 +13,9 @@ namespace General
 		Board(int col, int row);
 		int col;
 		int row;
+		char** board;
+
+		void ShowBoard();
 		// Validates if a checker can be placed in chosen column.
 		bool ValidateMove(int col);
 		// Places a checker in chosen column.

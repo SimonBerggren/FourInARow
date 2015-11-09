@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <string>
 #include "Settings.h"
 
 namespace GUI
