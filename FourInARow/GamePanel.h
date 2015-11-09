@@ -9,8 +9,5 @@ namespace GUI
 	{
 	public:
 		GamePanel();
-
-		bool IsMouseClicked();
-		std::pair<int, int> GetMousePosition();
 	};
 }

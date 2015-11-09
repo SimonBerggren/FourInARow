@@ -20,6 +20,11 @@ namespace General
 
 		Settings* settings;
 		Board* board;
+
+		void StartGame();
+		void ShowAbout();
+		void RestartGame();
+		void ExitGame();
 	public:
 		Controller();
 		Entity::Player* playerA;
@@ -28,5 +33,7 @@ namespace General
 		void NextTurn();
 		// Ends the game.
 		bool EndGame();
+		// Handles commands
+		void HandleCommands();
 	};
 }

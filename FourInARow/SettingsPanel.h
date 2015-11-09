@@ -8,11 +8,12 @@ namespace GUI
 	*/
 	class SettingsPanel
 	{
-	private:
-		General::Settings* settings;
 	public:
-		SettingsPanel();
+		SettingsPanel() = delete;
+		SettingsPanel(General::Settings* settings);
+		General::Settings* settings;
 
-		void StartGame();
+		void ShowSettings();
+		
 	};
 }
