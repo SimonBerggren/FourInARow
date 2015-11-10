@@ -8,6 +8,7 @@ namespace General
 		boardPanel = new GUI::BoardPanel();
 		settings = new Settings();
 		settingsPanel = new GUI::SettingsPanel(settings);
+		browser = new GUI::Browser();
 
 		HandleCommands();
 	}
@@ -33,10 +34,10 @@ namespace General
 			switch (command)
 			{ 
 			case START_GAME:
-				StartGame();
+				EnterSettings();
 				break;
 			case SHOW_ABOUT:
-				menuPanel->browser->PrintAbout();
+				browser->PrintAbout();
 				break;
 			case QUIT_GAME:
 				running = false;
@@ -47,7 +48,7 @@ namespace General
 		}
 	}
 
-	void Controller::StartGame()
+	void Controller::EnterSettings()
 	{
 		settingsPanel->ShowSettings();
 		board = new Board(settings->column, settings->rows);
@@ -78,15 +79,10 @@ namespace General
 			playerB = new Entity::Remote(settings->IPAdress, settings->port);
 			break;
 		}
-		board->ShowBoard();
+		//std::thread gameThread(PlayGame);
 	}
 
-	void Controller::ShowAbout()
-	{
-
-	}
-
-	void Controller::RestartGame()
+	void Controller::PlayGame()
 	{
 
 	}

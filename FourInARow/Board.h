@@ -15,6 +15,7 @@ namespace General
 		int row;
 		char** board;
 
+		void Initialize();
 		void ShowBoard();
 		// Validates if a checker can be placed in chosen column.
 		bool ValidateMove(int col);

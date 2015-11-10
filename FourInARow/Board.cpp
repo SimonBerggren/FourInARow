@@ -6,7 +6,10 @@ namespace General
 	{
 		this->col = col;
 		this->row = row;
+	}
 
+	void Board::Initialize()
+	{
 		board = new char*[row];
 		for (int i = 0; i < row; ++i)
 			board[i] = new char[col];

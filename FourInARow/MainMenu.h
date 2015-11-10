@@ -20,8 +20,6 @@ namespace GUI
 	public:
 		MainMenu();
 
-		Browser* browser;
-
 		int WaitForCommand();
 
 		bool IsAboutClicked();

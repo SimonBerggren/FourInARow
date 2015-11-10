@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <thread>
 #include "Human.h"
 #include "AI.h"
 #include "Remote.h"
@@ -21,13 +22,13 @@ namespace General
 		GUI::MainMenu* menuPanel;
 		GUI::BoardPanel* boardPanel;
 		GUI::SettingsPanel* settingsPanel;
+		GUI::Browser* browser;
 
 		Settings* settings;
 		Board* board;
 
-		void StartGame();
-		void ShowAbout();
-		void RestartGame();
+		void EnterSettings();
+		void PlayGame();
 		void QuitGame();
 	public:
 		Controller();

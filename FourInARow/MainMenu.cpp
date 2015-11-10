@@ -2,10 +2,7 @@
 
 namespace GUI
 {
-	MainMenu::MainMenu()
-	{
-		browser = new Browser();
-	}
+	MainMenu::MainMenu() { }
 
 	int MainMenu::WaitForCommand()
 	{

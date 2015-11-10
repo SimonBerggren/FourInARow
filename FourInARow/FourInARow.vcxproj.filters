@@ -69,14 +69,14 @@
     <ClCompile Include="Settings.cpp">
       <Filter>Source Files\General</Filter>
     </ClCompile>
-    <ClCompile Include="browser.cpp">
-      <Filter>Source Files\GUI</Filter>
-    </ClCompile>
     <ClCompile Include="Client.cpp">
       <Filter>Source Files\Network</Filter>
     </ClCompile>
     <ClCompile Include="Server.cpp">
       <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Browser.cpp">
+      <Filter>Source Files\GUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

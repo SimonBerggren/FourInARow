@@ -66,7 +66,7 @@
   <ItemGroup>
     <ClCompile Include="AI.cpp" />
     <ClCompile Include="Board.cpp" />
-    <ClCompile Include="browser.cpp" />
+    <ClCompile Include="Browser.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="BoardPanel.cpp" />

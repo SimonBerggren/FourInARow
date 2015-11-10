@@ -1,25 +1,16 @@
-﻿Build started 2015-11-09 4:26:51 PM.
-     1>Project "C:\Users\Simon\Desktop\FourInARow\FourInARow\FourInARow.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 2015-11-10 16:53:00.
+     1>Project "E:\git\FourInARow\FourInARow\FourInARow.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program\Visual Studio 12\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AI.cpp Board.cpp browser.cpp Client.cpp Controller.cpp BoardPanel.cpp Human.cpp Main.cpp MainMenu.cpp Remote.cpp Server.cpp Settings.cpp SettingsPanel.cpp
-         SettingsPanel.cpp
-         Settings.cpp
-         Server.cpp
-         Remote.cpp
-         MainMenu.cpp
-         Main.cpp
-         Human.cpp
-         BoardPanel.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Controller.cpp Main.cpp
          Controller.cpp
-         Client.cpp
-         browser.cpp
-         Board.cpp
-         AI.cpp
+     1>e:\git\fourinarow\fourinarow\controller.cpp(82): warning C4930: 'std::thread gameThread(void)': prototyped function not called (was a variable definition intended?)
          Generating Code...
+         Skipping... (no relevant changes detected)
+         Main.cpp
        Link:
-         D:\Program\Visual Studio 12\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.lib" /MACHINE:X86 Debug\AI.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git\FourInARow\Debug\FourInARow.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\git\FourInARow\Debug\FourInARow.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\git\FourInARow\Debug\FourInARow.lib" /MACHINE:X86 Debug\AI.obj
          Debug\Board.obj
-         Debug\browser.obj
+         Debug\Browser.obj
          Debug\Client.obj
          Debug\Controller.obj
          Debug\BoardPanel.obj
@@ -30,9 +21,10 @@
          Debug\Server.obj
          Debug\Settings.obj
          Debug\SettingsPanel.obj
-         FourInARow.vcxproj -> C:\Users\Simon\Desktop\FourInARow\Debug\FourInARow.exe
-     1>Done Building Project "C:\Users\Simon\Desktop\FourInARow\FourInARow\FourInARow.vcxproj" (Rebuild target(s)).
+     1>AI.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+         FourInARow.vcxproj -> E:\git\FourInARow\Debug\FourInARow.exe
+     1>Done Building Project "E:\git\FourInARow\FourInARow\FourInARow.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:07.03
+Time Elapsed 00:00:00.84
